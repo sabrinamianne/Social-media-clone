@@ -59,6 +59,19 @@ function Left() {
           font-size:14px;
         }
 
+        .profil3 {
+          width: 360px;
+          height: 500px;
+          border: 1.5px solid #c4c4c4;
+          border-radius: 1px;
+          margin-top:10px;
+          padding-left:20px;
+          padding-right:20px;
+          padding-top:20px;
+          line-height:1.5;
+
+        }
+
         `}
       </style>
       <div className="profil">
@@ -70,7 +83,14 @@ function Left() {
         <p>TWEETS</p>
         <p>FOLLOWING</p>
         <p>FOLLOWERS</p>
-        </div>
+      </div>
+      <div className="profil3">
+      <p>@KellyH</p><br/>
+      <p><strong>Location:</strong> Seattle</p><br/>
+      <p><strong>Joined</strong> December 2008</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+      </div>
       </div>
     </div>
   )
