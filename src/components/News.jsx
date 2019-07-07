@@ -3,22 +3,22 @@ import New from './New';
 
 var masterNewsList= [
   {
-    title: 'Lorem Ipsum',
+    title: 'Sally Jones',
     img: 'person1.jpeg',
     feed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
    },
    {
-     title: 'Lorem Ipsum',
+     title: 'Mr Robot',
        img: 'person2.jpg',
      feed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-      title: 'Lorem Ipsum',
+      title: 'Bryan Pacchiavoli',
         img: 'person3.jpg',
       feed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
      },
      {
-       title: 'Lorem Ipsum',
+       title: 'Suzanne Bones',
          img: 'person4.jpg',
        feed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
       }

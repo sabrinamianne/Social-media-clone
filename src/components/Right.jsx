@@ -17,7 +17,8 @@ function Right() {
         .news {
           margin-top:0;
           position:absolute;
-          margin-left: 55%;
+          margin-left: 52%;
+          background-color: white;
         }
 
         .box {

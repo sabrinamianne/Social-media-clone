@@ -6,14 +6,23 @@ function New(props) {
   return (
     <div>
       <style jsx>{`
-          img {
-            width:50px;
-            height: 50px;
+          #actus {
+            width:100px;
+            height: 100px;
           }
+
+           h3 {
+           text-align: center;
+           margin-top:15%;
+           margin-right:6em;
+           float: right;
+           font-size:15px;
+          }
+
           `}</style>
-        <img src={require(`../assets/img/${props.img.toLowerCase()}`)}/>
-        <h3> {props.title} </h3>
-      <p><em>{props.feed}</em></p>
+          <img id="actus" src={require(`../assets/img/${props.img.toLowerCase()}`)}/>
+          <h3> {props.title} </h3>
+          <p><em>{props.feed}</em></p>
       <hr/>
     </div>
   );
