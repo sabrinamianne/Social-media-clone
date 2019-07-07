@@ -1,3 +1,6 @@
+![alt text](https://github.com/sabrinamianne/Social-media-clone/blob/master/src/assets/img/screen.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
