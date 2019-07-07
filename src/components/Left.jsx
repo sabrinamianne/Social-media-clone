@@ -1,6 +1,7 @@
 import React from 'react';
-import profile from '../assets/img/icone.png'
-
+import profile from '../assets/img/icone.png';
+import Right from './Right';
+import PropTypes from 'prop-types';
 
 function Left() {
   return (
@@ -60,8 +61,8 @@ function Left() {
         }
 
         .profil3 {
-          width: 360px;
-          height: 500px;
+          width: 357px;
+          height: auto;
           border: 1.5px solid #c4c4c4;
           border-radius: 1px;
           margin-top:10px;
@@ -74,25 +75,25 @@ function Left() {
 
         `}
       </style>
+      <Right/>
       <div className="profil">
         <div id="img"><img src={profile}></img></div>
       </div>
       <div id="profil2">
         <p id="name">Kellie A. Corrigan</p>
         <div className="lines">
-        <p>TWEETS</p>
-        <p>FOLLOWING</p>
-        <p>FOLLOWERS</p>
+          <p>TWEETS</p>
+          <p>FOLLOWING</p>
+          <p>FOLLOWERS</p>
+        </div>
+        <div className="profil3">
+          <p>@KellyH</p><br/>
+          <p><strong>Location:</strong> Seattle</p><br/>
+          <p><strong>Joined</strong> December 2008</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
       </div>
-      <div className="profil3">
-      <p>@KellyH</p><br/>
-      <p><strong>Location:</strong> Seattle</p><br/>
-      <p><strong>Joined</strong> December 2008</p>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-      </div>
-      </div>
-    </div>
+  </div>
   )
 }
 
