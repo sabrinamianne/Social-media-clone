@@ -8,6 +8,7 @@ function MessageForm(props) {
 let _post = null;
 
 
+
 function handleNewMessage(event){
     event.preventDefault();
     props.onNewCreation({post: _post.value});
@@ -21,6 +22,7 @@ function handleNewMessage(event){
         <div>
          <form onSubmit={handleNewMessage}>
          <label htmlFor="message">New message</label>
+         
          <textarea
          type="text"
          id='post'

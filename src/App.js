@@ -12,15 +12,18 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterMessageList: []
+      masterMessageList: [],
     };
     this.handleAddingNewMessageToList = this.handleAddingNewMessageToList.bind(this);
   }
 
     handleAddingNewMessageToList(newPost){
+     
+      
       var newMasterMessageList = this.state.masterMessageList.slice();
       newMasterMessageList.push(newPost);
       this.setState({masterMessageList: newMasterMessageList});
+      newPost.like =0;
     }
 
     render(){
