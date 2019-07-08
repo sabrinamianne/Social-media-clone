@@ -17,7 +17,7 @@ function Right() {
         .news {
           margin-top:0;
           position:absolute;
-          margin-left: 52%;
+          margin-left: 55%;
           background-color: white;
         }
 
@@ -43,7 +43,7 @@ function Right() {
           height: 25px;
           border: 3px solid #9bd5fa;
           background-color: white;
-          margin-left:30%;
+          margin-left:33%;
           margin-top:1em;
           padding-top:5px;
           padding-left:5px;

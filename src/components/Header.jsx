@@ -33,6 +33,7 @@ function Header(){
         width:100px;
         height: 35px;
         font-size:13px;
+        margin-top:9px;
       }
 
       #leftBtn3 {
@@ -55,9 +56,11 @@ function Header(){
         width: 180px;
         height:25px;
         margin-right: 2em;
+        margin-left: 20px;
         font-size:13px;
         border: 1.5px solid #2b97f0;
         padding-left: 10px;
+        margin-top:9px;
       }
 
       #tweet {
@@ -77,6 +80,15 @@ function Header(){
         margin-top: 13px;
       }
 
+      #Add {
+        border: 1.5px solid #2b97f0;
+        border-radius: 18px;
+        width: 130px;
+        height:25px;
+        font-size:13px;
+        font-weight: lighter;
+        color: #36383b;
+      }
 
     `}
     </style>
@@ -88,6 +100,7 @@ function Header(){
       <Link to='/messages'><button id="leftBtn3">Messages</button></Link>
     </span>
     <span id="rightBtn">
+    <Link to='/newmessage'><button id="Add">New Message</button></Link>
     <input id="search" type="text" placeholder="Search" name="tweet"></input>
     <button id="tweet" type="submit" name="tweet">Tweet</button>
     </span>

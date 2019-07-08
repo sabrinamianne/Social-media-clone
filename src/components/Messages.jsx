@@ -2,7 +2,7 @@ import React from 'react';
 import Message from './Message';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
+import Left from './Left';
 
 
 
@@ -10,11 +10,19 @@ function Messages(props) {
 
     return(
         <div>
-         <Link to='/newmessage'><button>New Message</button></Link>
-         {props.messages.map((message, index) =>
-         <Message
-         post={message.post}
-         key={index}/>
+            <style jsx> { `  
+  
+
+            
+             `}
+            </style>
+            <Left/>
+            {props.messages.map((message, index) =>
+            <Message
+            post={message.post}
+            array={props.messages}
+            key={index}/>
+         
             )}
         </div>
     );

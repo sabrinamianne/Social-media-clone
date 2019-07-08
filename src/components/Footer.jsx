@@ -5,7 +5,7 @@ function Footer(){
     <div>
       <style jsx> {`
         .footer {
-          position: sticky;
+          position: fixed;
           bottom:0;
           margin-top:5em;
           left:0;

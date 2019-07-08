@@ -10,6 +10,7 @@ function Left() {
       <style jsx> {`
         .profil {
           margin-left: 20%;
+          position: sticky;
           width: 400px;
           height: 148px;
           border: 1.5px solid #c4c4c4;

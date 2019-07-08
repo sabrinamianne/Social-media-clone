@@ -13,7 +13,7 @@ function Add() {
           background-color: white;
           width:400px;
           height:auto;
-          margin-top:30%;
+          margin-top:32em;
           margin-left:20%;
           padding-bottom:1em;
         }
