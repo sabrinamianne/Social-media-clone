@@ -1,4 +1,7 @@
 import React from 'react';
+import {  Link } from 'react-router-dom';
+import Messages from './Messages';
+
 
 
 function Header(){
@@ -80,9 +83,9 @@ function Header(){
 
   <div className="Navbar">
     <span id="leftBtn">
-      <button id="leftBtn1">Home</button>
+      <Link to='/'><button id="leftBtn1">Home</button></Link>
       <button id="leftBtn2">Notifications</button>
-      <button id="leftBtn3">Messages</button>
+      <Link to='/messages'><button id="leftBtn3">Messages</button></Link>
     </span>
     <span id="rightBtn">
     <input id="search" type="text" placeholder="Search" name="tweet"></input>

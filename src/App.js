@@ -1,18 +1,42 @@
 import React from 'react';
-import Header from './components/Header';
-import Left from './components/Left';
+import Home from './components/Home';
 import './App.css';
-import News from './components/News';
 import Footer from './components/Footer';
+import {Switch, Route } from 'react-router-dom';
+import Messages from './components/Messages';
+import Header from './components/Header';
+import MessageForm from './components/MessageForm';
 
-function App() {
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterMessageList: []
+    };
+    this.handleAddingNewMessageToList = this.handleAddingNewMessageToList.bind(this);
+  }
+
+    handleAddingNewMessageToList(newPost){
+      var newMasterMessageList = this.state.masterMessageList.slice();
+      newMasterMessageList.push(newPost);
+      this.setState({masterMessageList: newMasterMessageList});
+    }
+
+    render(){
   return (
-    <div className="App">
+    <div>
     <Header/>
-    <Left/>
+    <Switch>
+      <Route exact path= '/' component={Home} />
+      <Route path='/messages' render={()=><Messages messages={this.state.masterMessageList} />} />
+      <Route path='/newmessage' render={()=><MessageForm onNewCreation={this.handleAddingNewMessageToList} />} />
+    
+    </Switch>
     <Footer/>
     </div>
   );
+}
 }
 
 export default App;
